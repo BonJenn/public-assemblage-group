@@ -1,49 +1,69 @@
 .container {
     background-color: #f4f4f8;
-    padding: 40px;
+    padding: 60px 20px;
     text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
 .header {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #222;
 }
 
 .subheader {
-    font-size: 1em;
-    color: #666;
-    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 50px;
 }
 
-.offer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.offerGrid {
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: space-around; /* Space items evenly */
     gap: 20px;
-    justify-items: center;
+    flex-direction: row;
 }
 
-.offer-item {
+.offerItem {
+    display: flex;
+    flex-direction: column; /* Stack image above text */
+    align-items: center; /* Center content horizontally */
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
+.offerItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imagePlaceholder {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.textContainer {
+    padding: 10px 0;
 }
 
 .title {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    color: #222;
 }
 
 .description {
-    font-size: 0.9em;
-    color: #666;
+    font-size: 0.85em;
+    color: #555;
 }
