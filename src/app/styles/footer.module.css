@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: space-between; /* This will place the items on opposite sides */
+    align-items: center;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center the text */
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0; /* Align to the bottom of the page */
+    width: 100%; /* Full width */
+    height: 200px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.footer-left {
+    /* Additional styles for footer-left if needed */
+}
+
+.footer-right {
+    /* Additional styles for footer-right if needed */
+}

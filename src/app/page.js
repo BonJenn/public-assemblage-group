@@ -18,6 +18,7 @@ export default function Home() {
         <Hero3 />
         <Hero4 />
         <Hero5 />
+        <Footer />
 
       </main>
       
